@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Check Weather</title>
+</head>
+<body>
+    <div class="bg">
+        <img src="./assets/cloud1.png" class="cloud1" alt="cloud1">
+        <img src="./assets/cloud2.png" class="cloud2" alt="cloud2">
+    </div>
+    <main>
+        <div class="header">
+            <i class="fa-solid fa-house home-icon" id="backToHome"></i>
+            <div><input id="cityName" type="text" placeholder="Search city" spellcheck="false"></div>
+            <i class="fa-solid fa-magnifying-glass" id="getWeather"></i>
+        </div>
+        <div class="hero" id="hero">
+            <img src="./assets/hero img.png" alt="Hero Image">
+            <h1>Get quick wether info</h1>
+        </div>
+
+        <div class="error" id="error">
+            <img src="./assets/error img.png" alt="error Image">
+            <h1 id="errorMessage">Oops, there is something ERROR</h1>
+        </div>
+
+        <div class="weatherInfoContainer" id="InfoContainer">
+            <img class="left" id="weatherImage" src="./assets/clouds.png" alt="climate condition">
+                
+            <div class="right">
+                <div class="one">
+                    <div class="one-data">
+                        <h2 class="temprature" id="temperature">0 °C</h2>
+                        <h1 id="city">City</h1>
+                    </div>
+                    <p class="weather" id="weather">weather</p>
+                </div>
+                <div class="two">
+                    <div class="cards">
+                        <div class="data">
+                            <img src="./assets/humidity.webp" alt="humidity">
+                            <p id="humidity">0%</p>
+                        </div>
+                        <h3>Humidity</h3>
+                    </div>
+                    <div class="cards">
+                        <div class="data">
+                            <img src="./assets/wind.webp" alt="humidity">
+                            <p id="wind">0 km/h</p>
+                        </div>
+                        <h3>Wind</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
